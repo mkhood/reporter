@@ -5,7 +5,9 @@ This app will show results of test runs
 
 ## First run reporter-node-server
 cd reporter-node-server
+
 yarn
+
 yarn start
 
 GET //for all reports
