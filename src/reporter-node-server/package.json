@@ -1,0 +1,15 @@
+{
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "glob": "^7.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.3"
+  }
+}
