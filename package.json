@@ -1,0 +1,57 @@
+{
+  "name": "ui-tests-reporter",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "babel-eslint": "10.0.3",
+    "child_process": "^1.0.2",
+    "cron": "^1.8.2",
+    "fs": "^0.0.1-security",
+    "glob": "^7.1.6",
+    "node-cmd": "^3.0.0",
+    "npm-run-script": "^0.0.4",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^5.0.1"
+  },
+  "scripts": {
+    "dev": "webpack",
+    "dev-start": "webpack-dev-server",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-preset-stage-0": "^6.5.0",
+    "react-transform-hmr": "^1.0.4",
+    "redux-devtools-extension": "^2.13.8",
+    "webpack-cli": "^3.3.11"
+  }
+}
