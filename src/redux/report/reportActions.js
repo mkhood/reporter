@@ -12,23 +12,23 @@ export const selectFile = (data) => {
   }
 }
 
-export const fetchReportData = ( fetchReportData ) => {
+  export const fetchReportData = ( fetchReportData ) => {
 
-  return (dispatch) => {
+    return (dispatch) => {
 
-    const fileName = fetchReportData.substr(6, 17)    
+      const fileName = fetchReportData.substr(6, 17)    
 
-    axios
-      .get(`http://localhost:3001/file${fileName}`)
-      .then(response => {
-        const data = response.data
-        dispatch(fetchReportDataSuccess(data))
-      })
-      .catch(error => {
-        dispatch(fetchReportDataFailure(error.message))
-      })
-  }
-}
+      axios
+        .get(`http://localhost:3001/file${fileName}`)
+        .then(response => {
+          const data = response.data
+          dispatch(fetchReportDataSuccess(data))
+        })
+        .catch(error => {
+          dispatch(fetchReportDataFailure(error.message))
+        })
+    }
+  } 
 
   export const fetchReportDataSuccess = data => {
     return {      

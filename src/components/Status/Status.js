@@ -49,11 +49,11 @@ class Status extends Component {
             <div>
                { this.props.title > 0 
                     ? <>
-                      <TestsCount>14/30</TestsCount>
+                      <TestsCount>0/0</TestsCount>
                             <TestRunFailed></TestRunFailed>
                       </>
                       : <>
-                        <TestsCount>14/30</TestsCount>
+                        <TestsCount>0/0</TestsCount>
                             <TestRunPassed></TestRunPassed>
                         </> }
             </div>

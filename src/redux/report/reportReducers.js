@@ -19,7 +19,7 @@ const reportsReducer = (state = initialState, action) => {
         return {
           ...state,
           loading: true
-        }
+        }  
       case SET_CURRENT_FILE:
           return {
             ...state,
@@ -29,7 +29,7 @@ const reportsReducer = (state = initialState, action) => {
           return {
             isCurrentReportSet: true,
             currentReportData: action.payload
-      }    
+      }       
       default: return state
     }
   }
