@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 function miliToMinAndSec(timeValue) {
     let sec = Math.floor(timeValue / 1000);

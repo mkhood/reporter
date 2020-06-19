@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import TimeConverter from '../TimeConverter/TimeConverter';
+// import DateConverter from '../DateConverter/DateConverter';
 
 const StyledSummaryPanel = styled.div`
         padding: 20px;
@@ -89,6 +90,7 @@ class InfoPanel extends Component {
                         <li>Feature files: <span className="summaryNormal">{reportData.stats.suites}</span></li>          
                         <li>Duration: <span className="summaryNormal"><TimeConverter timeValue={reportData.stats.duration}></TimeConverter></span></li>
                         <li>Start time: <span className="summaryNormal">{reportData.stats.start}</span></li>
+                        {/* <li><DateConverter ></DateConverter></li> */}
                         <li>End time: <span className="summaryNormal">{reportData.stats.end}</span></li>
                     </ul>
             </StyledSummaryPanel>        

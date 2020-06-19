@@ -12,14 +12,7 @@ class ResultsListContainer extends Component {
   componentDidMount() {
     if ( this.props.report.isCurrentReportSet === false ) {
       this.props.fetchResultsList()
-    }
-    console.log('Before job instantiation');
-    var CronJob = require('cron').CronJob;
-      var job = new CronJob('* * * * * *', function() {
-        console.log('You will see this message every second');
-      }, null, true);
-    console.log('After job instantiation');
-    job.start();
+    }    
   }
 
   render() { 

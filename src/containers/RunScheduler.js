@@ -5,18 +5,20 @@ import Layout from '../layout/Layout';
 import Sidebar from '../components/Sidebar/Sidebar';
 import Heading from '../components/Heading/Heading';
 
-var CronJob = require('cron').CronJob;
+// var CronJob = require('cron').CronJob;
 
 class RunScheduler extends Component {
 
   render() { 
 
-      console.log('Before job instantiation');
+      // console.log('Cron is up and running');
       
-      var job = new CronJob('* * * * * *', function() {
-        console.log('Cron is run every second');
-      }, null, true, 'America/Los_Angeles');
-      job.start();
+      // var job = new CronJob('* * * * * *', function() {
+      //   console.log('##### ##### ##### ##### #####');
+      //   console.log('##### ADD CRON JON HERE #####');
+      //   console.log('##### ##### ##### ##### #####');
+      // }, null, true, 'America/Los_Angeles');
+      // // job.start();
 
   
     return (
@@ -28,7 +30,7 @@ class RunScheduler extends Component {
             </div>
             <div className="infoPanel_box2">
               <div></div>
-                <Heading h2>Tests will be run after every 1 sec from now</Heading>
+                <Heading h2>Tests will be run after every 1 min from now</Heading>
             </div>
         </div>
     </Layout>

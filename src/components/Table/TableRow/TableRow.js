@@ -37,14 +37,14 @@ class TableRow extends Component {
         
             return ( 
                 <tr>
-                    <td>{title}</td>
+                    <td>{ title }</td>
                     <td>
-                      {status === 'passed' ? (
-                        <SuccessMark>&#x2714;</SuccessMark>
-                          ) : (<FailedMark>&#x274C;</FailedMark>)}
+                      { status === 'passed' ? (
+                        <SuccessMark><span role="img" aria-label="success">&#x2714;</span></SuccessMark>
+                          ) : (<FailedMark><span role="img" aria-label="failed">&#x274C;</span></FailedMark>) }
                     </td>
                     <td><TimeConverter timeValue={duration}></TimeConverter></td>
-                    <td><ErrorMark>&#9729;</ErrorMark></td>
+                    <td><ErrorMark><span role="img" aria-label="error">&#9729;</span></ErrorMark></td>
                 </tr>                      
               )
             }

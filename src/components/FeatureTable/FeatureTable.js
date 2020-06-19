@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Heading from '../../components/Heading/Heading';
 import FeatureTableHeader from './FeatureTableHeader/FeatureTableHeader';
 import FeatureTableRow from './FeatureTableRow/FeatureTableRow';
-import TimeConverter from '../TimeConverter/TimeConverter';
 
 const StyledWrapper = styled.div`
         padding: 0;
@@ -55,14 +54,6 @@ const FailedMark = styled.p`
     marging: 0;
 `;
 
-const SuccessMark = styled.p`
-    color: ${({theme}) => theme.colors.green};
-    font-size: 14px;
-    font-weight: bold;
-    padding: 0;
-    marging: 0;
-`;
-
 const ScreenshotsMark = styled.p`
     border: 1px solid ${({theme}) => theme.colors.yellow};
     color: ${({theme}) => theme.colors.yellow};
@@ -104,35 +95,18 @@ class FeatureTable extends Component {
                     <table className="FeatureSummaryTable">
                         <FeatureTableHeader/>
                             <tbody>
-                            <tr>
-                                <td>{reportData.results[0].suites[0].title}</td>
-                                <td><FailedMark>&#x274C;</FailedMark></td>
-                                <td><TimeConverter timeValue={reportData.results[0].suites[0].duration}></TimeConverter></td>
-                                <td><ScreenshotsMark>&#9658;</ScreenshotsMark></td>
-                                <td><MovieMark>&#9658;</MovieMark></td> 
-                            </tr>
-                            <tr>
-                                <td>{reportData.results[1].suites[0].title}</td>
-                                <td><FailedMark>&#x274C;</FailedMark></td>
-                                <td><TimeConverter timeValue={reportData.results[0].suites[0].duration}></TimeConverter></td>
-                                <td><ScreenshotsMark>&#9658;</ScreenshotsMark></td>
-                                <td><MovieMark>&#9658;</MovieMark></td>                                
-                            </tr>                              
+                                { reportData.results.map(result => (
+                                    result.suites.map(suite => ( 
+                                    <FeatureTableRow
+                                        title={suite.title}
+                                        status={suite.failures.length > 0 ? 'error' : 'passed'}
+                                        duration={suite.duration}
+                                        error={suite.err}
+                                    />
+                                    )
+                                ))) }
                             </tbody>
-
-                            {/* <tbody>
-                            { reportData.results.map(result => (
-                               result.suites[0].tests.map(test => ( 
-                                  <FeatureTableRow
-                                      title={test.title}
-                                      status={test.state}
-                                      duration={test.duration}
-                                      error={test.err}
-                                  />
-                                  )
-                            )))}    
-                        </tbody> */}
-                    </table>                   
+                            </table>
                 </StyledWrapper>
             )
         }

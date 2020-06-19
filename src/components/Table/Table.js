@@ -46,7 +46,8 @@ class Table extends Component {
 
   render() {
 
-    const { reportData } = this.props 
+    const { reportData } = this.props
+    
     return reportData === null ? (
       <h2>Loading</h2>
       ) : (

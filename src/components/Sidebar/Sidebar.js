@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import logoPng from '../../layout/icons/react-logo.png';
+// import jmeterPng from '../../layout/icons/jmeter_icon.png';
 
 const StyledWrapper = styled.nav`
     background-color: ${({ theme }) => theme.colors.bluesidebar};    
@@ -35,6 +36,11 @@ const StyledWrapper = styled.nav`
 
   a {
     text-decoration: none;
+  }
+
+  .menuicon {
+    marging: 0 0 0 12px
+    padding: 0 0 0 0;
   }
 `;
 
@@ -79,6 +85,17 @@ const CronMark = styled.p`
     width: 10px;
     hight: 10px;
 `;
+// const PerformanceLink = styled.div`
+//   background-image: url(${jmeterPng});
+//   background-repeat: no-repeat;
+//   background-size: 100%;
+//   display: block;
+//   width: 20px;
+//   height: 39px;
+//   marging: 0 0 0 12px;
+//   padding: 0 0 0 12px;
+// `;
+
 
 const Sidebar = () => (
     <StyledWrapper>
@@ -88,9 +105,7 @@ const Sidebar = () => (
           <StyledLine></StyledLine>
           <HomeMark><a href="/">&#8962;</a></HomeMark>
           <CronMark><a href="/cron">&#9716;</a></CronMark>
-            {/* <ul className="sidebar_menu">
-                <li><a href="/">DASHBOARD</a></li>
-            </ul>        */}
+          {/* <PerformanceLink><a href="/performance"></a></PerformanceLink> */}
         </div>
     </StyledWrapper>
 );
