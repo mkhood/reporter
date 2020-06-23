@@ -7,7 +7,7 @@ import Status from '../../components/Status/Status';
 const CardWrapper = styled.div`
     display: flex;
     padding: 0 0 20px 0;
-    margin: 40px 40px 0 0;
+    margin: 30px 30px 0 0;
     width: 170px;
     height: 170px;
     justify-content: center;
@@ -18,7 +18,7 @@ const CardWrapper = styled.div`
     border-radius: 0;
     border: 1px solid ${({theme}) => theme.colors.pinkdlackdash};
     background-color: ${({theme}) => theme.colors.bluetable};
-    color: ${({theme}) => theme.colors.grey};                   
+    color: ${({theme}) => theme.colors.grey};
 
     .Card a {
         text-decoration: none !important;
@@ -92,8 +92,8 @@ class Card extends Component {
         return (
             <CardWrapper>
                 <div className="Card">
-                    <CardTop class="carttop"><Status></Status></CardTop>
-                    <CardIcon class="cartIcon"></CardIcon>
+                    <CardTop className="carttop"><Status></Status></CardTop>
+                    <CardIcon className="cartIcon"></CardIcon>
                     <CardText><Link to="/report">{ title.substr(7, 16) }</Link></CardText>
                 </div>
             </CardWrapper>

@@ -46,37 +46,6 @@ const StyledHeadingWrapper = styled.div`
     padding: 20px 0 20px 0;
 `;
 
-const FailedMark = styled.p`
-    color: ${({theme}) => theme.colors.red};
-    font-size: 14px;
-    font-weight: bold;
-    padding: 0;
-    marging: 0;
-`;
-
-const ScreenshotsMark = styled.p`
-    border: 1px solid ${({theme}) => theme.colors.yellow};
-    color: ${({theme}) => theme.colors.yellow};
-    font-size: 12px;
-    font-weight: bold;
-    padding: 1px;
-    marging: 0;
-    width: 22px;  
-    hight: 22px;
-`;
-
-const MovieMark = styled.p`
-    border: 1px solid ${({theme}) => theme.colors.orange};
-    color: ${({theme}) => theme.colors.orange};
-    font-size: 12px;
-    font-weight: bold;
-    padding: 1px;
-    marging: 0;
-    width: 22px;  
-    hight: 22px;
-
-`;
-
 class FeatureTable extends Component {
 
     render() {

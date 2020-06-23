@@ -43,7 +43,7 @@ class Status extends Component {
 
     render() {
         
-        const { title } = this.props;
+        // const { title } = this.props;
 
         return (
             <div>

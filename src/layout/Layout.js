@@ -51,6 +51,39 @@ const GlobalStyle = createGlobalStyle`
     padding: 0 40px 40px 40px;
     background-color: ${({theme}) => theme.colors.bluetable};
   }
+
+  .cards_pannel {
+    float: left;
+    width: 100%;
+  }
+
+  .pagination_panel {
+    width: 100%;
+    height: 40px;
+    margin: 20px 0 30px 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    display: block;
+  }
+
+  .pagination_panel ul {
+    list-style: none;
+    display: block;
+  }
+  
+  .pagination_panel ul li {
+    float: left;
+    // background-color: ${({theme}) => theme.colors.graydark};
+    color: ${({ theme }) => theme.colors.pinksecond};
+    border: 1px solid ${({theme}) => theme.colors.pinksecond};
+    line-height: 1;
+    font-size: 18px;
+    margin: 5px;
+    padding: 5px;
+    user-select: none;
+    cursor: pointer;
+  }
 `;
 
 const Layout = ({children}) => (
