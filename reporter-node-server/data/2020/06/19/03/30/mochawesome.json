@@ -1,0 +1,219 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 20,
+    "passes": 19,
+    "pending": 0,
+    "failures": 1,
+    "start": "2019-12-10T13:06:30.347Z",
+    "end": "2019-12-10T13:06:30.347Z",
+    "duration": 260541,
+    "testsRegistered": 20,
+    "passPercent": 95,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0aadb0e9-5d97-40e7-8594-31b9b649c4fc",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7432c508-4977-46dc-bd1a-7c6940f03020",
+          "title": "Create Prospect List Businness process tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "I create Prospect List with \"manually\" Cadence and \"preassigned\" (example #1)",
+              "fullTitle": "Create Prospect List Businness process tests I create Prospect List with \"manually\" Cadence and \"preassigned\" (example #1)",
+              "timedOut": null,
+              "duration": 29613,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "f570c9e1-ce66-4c4c-ba53-91f9b53d17e4",
+              "parentUUID": "7432c508-4977-46dc-bd1a-7c6940f03020",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "I create Prospect List with \"manually\" Cadence and \"shared\" (example #2)",
+              "fullTitle": "Create Prospect List Businness process tests I create Prospect List with \"manually\" Cadence and \"shared\" (example #2)",
+              "timedOut": null,
+              "duration": 21558,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "03c80c47-5435-482e-b4a9-cae54eefa540",
+              "parentUUID": "7432c508-4977-46dc-bd1a-7c6940f03020",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "I create Prospect List with \"automatically\" Cadence and \"preassigned\" (example #3)",
+              "fullTitle": "Create Prospect List Businness process tests I create Prospect List with \"automatically\" Cadence and \"preassigned\" (example #3)",
+              "timedOut": null,
+              "duration": 22510,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "a0929c54-5431-4aee-85c1-97b7b4c80bd7",
+              "parentUUID": "7432c508-4977-46dc-bd1a-7c6940f03020",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "I create Prospect List with \"automatically\" Cadence and \"shared\" (example #4)",
+              "fullTitle": "Create Prospect List Businness process tests I create Prospect List with \"automatically\" Cadence and \"shared\" (example #4)",
+              "timedOut": null,
+              "duration": 22190,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "0549837d-e34b-41f2-ae6a-aa53a115e764",
+              "parentUUID": "7432c508-4977-46dc-bd1a-7c6940f03020",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f570c9e1-ce66-4c4c-ba53-91f9b53d17e4",
+            "03c80c47-5435-482e-b4a9-cae54eefa540",
+            "a0929c54-5431-4aee-85c1-97b7b4c80bd7",
+            "0549837d-e34b-41f2-ae6a-aa53a115e764"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 95871,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "f41847b0-431d-46d5-a148-cb9bf1003a24",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f274be34-7bb4-47c0-acdc-5ebe8c1d0d13",
+          "title": "Edit Cadence Businness process tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "I can edit Cadence",
+              "fullTitle": "Edit Cadence Businness process tests I can edit Cadence",
+              "timedOut": null,
+              "duration": 24470,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "0d742db6-9f51-4443-89bb-79cfb9b6b29e",
+              "parentUUID": "f274be34-7bb4-47c0-acdc-5ebe8c1d0d13",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0d742db6-9f51-4443-89bb-79cfb9b6b29e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 24470,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }   
+  ],
+  "meta": {
+    "mocha": {
+      "version": "3.5.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.0.1"
+    }
+  }
+}

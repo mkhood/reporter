@@ -1,0 +1,167 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-06-19T09:41:38.958Z",
+    "end": "2020-06-19T09:41:38.959Z",
+    "duration": 805,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2163575f-0afa-4211-bfcb-2175fdd7465d",
+      "title": "",
+      "fullFile": "cypress\\integration\\CoDSupervisorChecks.feature",
+      "file": "cypress\\integration\\CoDSupervisorChecks.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "225367a2-109b-4a2b-944b-bdb6633a723e",
+          "title": "Cloud on Demand checks - Supervisor",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify if Portal Page loads with Portal Banner \"Ads\"",
+              "fullTitle": "Cloud on Demand checks - Supervisor Verify if Portal Page loads with Portal Banner \"Ads\"",
+              "timedOut": null,
+              "duration": 78,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "d0eecd0b-367c-4861-89b8-58882d5835a0",
+              "parentUUID": "225367a2-109b-4a2b-944b-bdb6633a723e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d0eecd0b-367c-4861-89b8-58882d5835a0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 78,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "2743f92a-1653-4266-9aa1-dfe0350e77d2",
+      "title": "",
+      "fullFile": "cypress\\integration\\CoDAgentChecks.feature",
+      "file": "cypress\\integration\\CoDAgentChecks.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d8107891-68ed-4836-968a-07b73230a3eb",
+          "title": "Cloud on Demand checks - Agent",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Agent presence can be change from Ready to Away & Away to Ready",
+              "fullTitle": "Cloud on Demand checks - Agent Agent presence can be change from Ready to Away & Away to Ready",
+              "timedOut": null,
+              "duration": 727,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step => stepTest.call(this, state, step, rowData))\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: Oops, it looks like you are trying to call a child command before running a parent command.\n\nYou wrote code that looks like this:\n\ncy.click(\"[name|=username]\")\n\nA child command must be chained after a parent because it operates on a previous subject.\n\nFor example - if we were issuing the child command 'click'...\n\ncy\n  .get('button') // parent command must come first\n  .click()       // then child command comes second\n",
+                "estack": "CypressError: Oops, it looks like you are trying to call a child command before running a parent command.\n\nYou wrote code that looks like this:\n\ncy.click(\"[name|=username]\")\n\nA child command must be chained after a parent because it operates on a previous subject.\n\nFor example - if we were issuing the child command 'click'...\n\ncy\n  .get('button') // parent command must come first\n  .click()       // then child command comes second\n\n    at Object.cypressErr (https://itg-test-pdx.nvminternal.net/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (https://itg-test-pdx.nvminternal.net/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (https://itg-test-pdx.nvminternal.net/__cypress/runner/cypress_runner.js:86194:17)\n    at pushSubjectAndValidate (https://itg-test-pdx.nvminternal.net/__cypress/runner/cypress_runner.js:81108:16)\n    at Context.<anonymous> (https://itg-test-pdx.nvminternal.net/__cypress/runner/cypress_runner.js:81413:18)\n    at https://itg-test-pdx.nvminternal.net/__cypress/runner/cypress_runner.js:80892:33\n    at tryCatcher (https://itg-test-pdx.nvminternal.net/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (https://itg-test-pdx.nvminternal.net/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (https://itg-test-pdx.nvminternal.net/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromiseCtx (https://itg-test-pdx.nvminternal.net/__cypress/runner/cypress_runner.js:118233:10)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://itg-test-pdx.nvminternal.net/__cypress/runner/cypress_runner.js:114933:12)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://itg-test-pdx.nvminternal.net/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (https://itg-test-pdx.nvminternal.net/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "a3006328-13fb-4fb6-add0-7b4c5ef2563b",
+              "parentUUID": "d8107891-68ed-4836-968a-07b73230a3eb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a3006328-13fb-4fb6-add0-7b4c5ef2563b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 727,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
