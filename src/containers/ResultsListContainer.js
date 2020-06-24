@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import Layout from '../layout/Layout';
@@ -7,7 +7,6 @@ import Card from '../components/Card/Card';
 import { selectFile } from '../redux/report/reportActions';
 import { fetchCardsData } from '../redux/cards/cardsActions';
 import { fetchResultsList } from '../redux/result/resultsListActions';
-// import Pagination from '../components/Pagination/Pagination';
 
 
 class ResultsListContainer extends Component {
@@ -17,7 +16,7 @@ class ResultsListContainer extends Component {
     this.state = {
       cards: [],
       currentPage: 1,
-      cardsPerPage: 20
+      cardsPerPage: 24
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -35,6 +34,11 @@ class ResultsListContainer extends Component {
     }
   }
 
+  wrapperOnClickActions = (data) => {
+    this.props.selectFile(data); 
+    this.setCurrentReportName(data);
+}
+
   render() {
 
     this.state.cards = this.props.singleReport.data;
@@ -45,7 +49,7 @@ class ResultsListContainer extends Component {
     const currentItem = cards.slice(indexOfFirstItem, indexOfLastItem);
 
     const renderCards = currentItem.map((data, index) => {             
-            return <Card title={data} />
+            return <Card key={index} title={data} />
     });
 
     const pageNumbers = [];
@@ -80,7 +84,6 @@ class ResultsListContainer extends Component {
                 </div>
                 <div className="pagination_panel">
                   <ul>
-                    {/* <Pagination></Pagination> */}
                     { renderPageNumbers}
                   </ul>
               </div>

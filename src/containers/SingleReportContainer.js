@@ -11,7 +11,10 @@ import Table from '../components/Table/Table';
 class SingleReportContainer extends Component {
 
   componentDidMount() {
-      this.props.fetchReportData(this.props.report.selectedFile)    
+    const fileName = '/2020/06/19/06/47'
+    // const fileName = this.props.report.selectedFile
+    // const cropedFileName = fileName.substr(6, 17)
+    this.props.fetchReportData(fileName)    
   }
 
   render() {

@@ -49,7 +49,7 @@ const CardTop = styled.div`
     display: block top;
     width: 55px;
     height: 20px;
-    background-color: ${({theme}) => theme.colors.graydark}; 
+    background-color: ${({theme}) => theme.colors.graydark};
     border-radius: 20px;
     margin: 3px 3px 17px 110px;
     padding: 0px;

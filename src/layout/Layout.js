@@ -58,30 +58,29 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .pagination_panel {
-    width: 100%;
-    height: 40px;
-    margin: 20px 0 30px 0;
+    margin: 20px 0 0 0;
     padding: 0;
     float: left;
-    list-style: none;
-    display: block;
+    list-style: none;    
   }
 
   .pagination_panel ul {
     list-style: none;
-    display: block;
   }
   
   .pagination_panel ul li {
     float: left;
-    // background-color: ${({theme}) => theme.colors.graydark};
+    text-align: center;
+    width: 25px;
+    height: 25px;
     color: ${({ theme }) => theme.colors.pinksecond};
+    background-color: ${({theme}) => theme.colors.graydark};
     border: 1px solid ${({theme}) => theme.colors.pinksecond};
+    border-radius: 100%;
     line-height: 1;
-    font-size: 18px;
+    font-size: 14px;
     margin: 5px;
-    padding: 5px;
-    user-select: none;
+    padding: 5px 3px 0px 3px;
     cursor: pointer;
   }
 `;

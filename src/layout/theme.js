@@ -24,6 +24,7 @@ export const theme = {
     cyan: '#2bffc6',
     white: '#ffffff',
     gray: '#BFB3B5',
+    graysecond: '#e3e3e3',
     graydark: '#32325d',
     dark: '#1E1E28',
     pinksecond: '#e14eca',

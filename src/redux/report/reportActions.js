@@ -2,24 +2,20 @@ import axios from 'axios';
 import {
   SET_CURRENT_FILE,
   SET_CURRENT_REPORT_DATA,
-  FETCH_DATA_FAILURE
+  FETCH_DATA_FAILURE,
+  SET_CURRENT_REPORT_NAME
 } from './reportTypes';
-
-export const selectFile = (data) => {
-  return {
-      type: SET_CURRENT_FILE,
-      payload: data
-  }
-}
 
   export const fetchReportData = ( fetchReportData ) => {
 
     return (dispatch) => {
 
-      const fileName = fetchReportData.substr(6, 17)    
-
+      const fileName = fetchReportData
+      
       axios
+      // console.log(fileName,"BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB")
         .get(`http://localhost:3001/file${fileName}`)
+        // .get(`http://localhost:3001/file${'/2020/06/19/06/47'}`)
         .then(response => {
           const data = response.data
           dispatch(fetchReportDataSuccess(data))
@@ -28,7 +24,21 @@ export const selectFile = (data) => {
           dispatch(fetchReportDataFailure(error.message))
         })
     }
-  } 
+  }
+
+  export const selectFile = (data) => {
+    return {
+        type: SET_CURRENT_FILE,
+        payload: data
+    }
+  }
+
+  export const setCurrentReportName = (data) => {
+    return {
+        type: SET_CURRENT_REPORT_NAME,
+        payload: data
+    }
+  }
 
   export const fetchReportDataSuccess = data => {
     return {      
