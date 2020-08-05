@@ -1,18 +1,7 @@
 
 const userRoutes = (app, fs) => {
     
-    const dir = './data'    
-    // const dataPath = './data/2020/02/02/mochawesome.json';
-    
-    const readFile = (callback, returnJson = false, filePath = dataPath, encoding = 'utf8') => {
-        fs.readFile(filePath, encoding, (err, data) => {
-            if (err) {
-                throw err;
-            }
-
-            callback(returnJson ? JSON.parse(data) : data);
-        });
-    };
+    const dir = './data'
 
     function getFiles (dir, files_){
         files_ = files_ || [];
@@ -49,10 +38,7 @@ const userRoutes = (app, fs) => {
         var minute = req.params.minute
 
         const filename = `./data/${year}/${month}/${day}/${hour}/${minute}/mochawesome.json`
-
-        console.log("##############")
-        console.log(filename)
-                
+   
         fs.readFile(filename, 'utf8', (err, data) => {
             if (err) {
                 res.send('File do not exist!');
