@@ -16,7 +16,7 @@ import {
     return (dispatch) => {
 
         axios
-        .get(`http://localhost:3001/file${fileName}`)
+        .get(`http://localhost:8010/file${fileName}`)
         .then(response => {
           const data = response.data
           dispatch(fetchCardsDataSuccess(data))

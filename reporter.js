@@ -10,7 +10,7 @@ const hour = String(dateValue.getHours() + 1).padStart(2, '0');
 const min = String(dateValue.getMinutes() + 1).padStart(2, '0');
 const yyyy = dateValue.getFullYear();
 
-const path = `/reporter/reporter-node-server/data/${yyyy}/${mm}/${dd}/${hour}/${min}`;
+const path = `/reporter/data/${yyyy}/${mm}/${dd}/${hour}/${min}`;
 
 const createDir = (dirPath) => {
   fs.mkdirSync(process.cwd() + dirPath, { recursive: true }, (error) => {

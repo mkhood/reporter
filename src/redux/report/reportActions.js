@@ -13,8 +13,7 @@ import {
       const fileName = fetchReportData
       
       axios
-      // console.log(fileName,"BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB")
-        .get(`http://localhost:3001/file${fileName}`)
+        .get(`http://localhost:8010/file${fileName}`)
         // .get(`http://localhost:3001/file${'/2020/06/19/06/47'}`)
         .then(response => {
           const data = response.data

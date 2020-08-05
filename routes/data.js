@@ -2,7 +2,7 @@
 const userRoutes = (app, fs) => {
     
     const dir = './data'    
-    const dataPath = './data/2020/02/02/mochawesome.json';
+    // const dataPath = './data/2020/02/02/mochawesome.json';
     
     const readFile = (callback, returnJson = false, filePath = dataPath, encoding = 'utf8') => {
         fs.readFile(filePath, encoding, (err, data) => {

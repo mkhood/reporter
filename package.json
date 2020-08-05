@@ -23,15 +23,25 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "shelljs": "^0.8.4",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.0.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "nodemon": "2.0.3",
+    "main": "server.js",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-preset-stage-0": "^6.5.0",
+    "react-transform-hmr": "^1.0.4",
+    "redux-devtools-extension": "^2.13.8",
+    "webpack-cli": "^3.3.11"
   },
   "scripts": {
     "dev": "webpack",
     "dev-start": "webpack-dev-server",
-    "start": "react-scripts start",
+    "reporter": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "api": "nodemon server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,12 +57,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "babel-plugin-react-transform": "^2.0.2",
-    "babel-preset-stage-0": "^6.5.0",
-    "react-transform-hmr": "^1.0.4",
-    "redux-devtools-extension": "^2.13.8",
-    "webpack-cli": "^3.3.11"
   }
 }

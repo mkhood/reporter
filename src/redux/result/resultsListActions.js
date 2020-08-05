@@ -8,7 +8,7 @@ import {
   export const fetchResultsList = () => {
     return (dispatch) => {
       axios
-        .get('http://localhost:3001/data')
+        .get('http://localhost:8010/data')
         .then(response => {
           const data = response.data
           dispatch(fetchResultsListSuccess(data))
